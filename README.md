@@ -1,2 +1,2 @@
 # Евгений Cleverland
-cleverland lession 1 
+Это рипозиторий Купава Евгения
