@@ -5,10 +5,12 @@ body {
     padding: 10px 30px;
     background-color: #d9edf3;
 }
+
 h1 {
     text-align: center;
     }
-h2 {
+
+    h2 {
     font-style: serif;
     font-weight: bold;
     color: rgb(84, 7, 87);
@@ -18,15 +20,16 @@ h2 {
 #img  {
     text-align: center;
 }
+
 #A  ol {
     list-style: none;
     counter-reset: li;
     }   
- 
 #A li:before {
     counter-increment: li;
-    content: counters(li,".") ".";
+    content: counters(li,".") ". ";
     }
+
 #B  {
     counter-reset: i;
     }   
@@ -38,3 +41,11 @@ h2 {
     content: counters(i,".")". ";
     }
 
+#C  ol {
+        list-style: none;
+        counter-reset: li;
+        }   
+#C li:before {
+        counter-increment: li;
+        content: counters(li,".") ". ";
+        }
