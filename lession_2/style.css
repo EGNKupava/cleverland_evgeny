@@ -1,0 +1,40 @@
+
+body {
+    margin: 20px 50px ;
+    border: solid;
+    padding: 10px 30px;
+    background-color: #d9edf3;
+}
+h1 {
+    text-align: center;
+    }
+h2 {
+    font-style: serif;
+    font-weight: bold;
+    color: rgb(84, 7, 87);
+    text-decoration: underline;
+    }   
+
+#img  {
+    text-align: center;
+}
+#A  ol {
+    list-style: none;
+    counter-reset: li;
+    }   
+ 
+#A li:before {
+    counter-increment: li;
+    content: counters(li,".") ".";
+    }
+#B  {
+    counter-reset: i;
+    }   
+#B ol ol ol  {
+    list-style: none;
+}
+#B li li li:before {
+    counter-increment: i;
+    content: counters(i,".")". ";
+    }
+
