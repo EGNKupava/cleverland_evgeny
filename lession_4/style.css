@@ -1,5 +1,17 @@
 body {
     text-align: center;
     color: white;
-    ;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+a {
+    font-size:  32px;
+    color: yellow; 
+}
+a:hover {
+    color: rgb(196, 103, 103);
+}
+.audio{
+    width: 100%;
 }
