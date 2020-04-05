@@ -209,10 +209,14 @@
                 <input type="text">
             </p>
             <p>Ввдедите пароль:
-                <input type="password" name="pass1" placeholder="******">
+                <input type="password" name="pass1" size="30"
+      required title="Должен содержать латинские буквы (минимум 6) и цифры (минимум 2)" 
+      pattern="[A-Za-z]{6,}\d{2,}" placeholder="******">
             </p>
             <p>Повторите пароль:
-                <input type="password" name="pass2" placeholder="******">
+                <input type="password" name="pass2" size="30"
+                    required title="Должен содержать латинские буквы (минимум 6) и цифры (минимум 2)" 
+                    pattern="[A-Za-z]{6,}\d{2,}" placeholder="******">
             </p>
             <p>
                 <input type="submit" value="Отправить">
@@ -226,7 +230,8 @@
     <form name="textarea">
       <p>  <textarea name="rew" cols="50" rows="10"></textarea>
       </p>
-      <input type="submit" value="Оставить отзыв">
+      <input type="submit" value="Оставить отзыв"><br>
+      
     </form>
 </body>
 </html>
