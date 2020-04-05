@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег Input</title>
+    <style>
+        body {
+        background: linear-gradient(to top, #d1dda4 0%, #d0d3d6 36%, #deedf7 100%); 
+        margin: 10px 30px;
+        padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Работа с формами</h1>
+    </center>
+    <fieldset>
+        <legend>
+            Седения опользователе
+        </legend>
+        <form name="users" >
+            <p>
+                Ваше Имя:
+                <input type="text" name="userName" size="30" placeholder="Имя">
+            </p>
+            <p>
+                Ваш возраст
+                <input type="text" name="userAge" list="age">
+                <datalist id="age">
+                    <option value="1-10 лет">
+                    <option value="11-16 лет">
+                    <option value="17-22 лет">
+                    <option value="23-35 лет">  
+                    <option value="35-50 лет">
+                    <option value="Старше 50">
+                </datalist>
+            </p>
+            <p>
+                Какую операционную системы вы используете?
+                <select name="os">
+                    <option value="1"> Windows </option>
+                    <option value="2"> Linux </option>
+                    <option value="3"> MacOS </option>
+                    <option value="4"> Другое </option>
+                </select>
+            </p>
+            <p>
+                Какие браузеры вы используете? <br>
+                <label>
+                    <input type="checkbox" name="edge" value="edge"> Microsoft EDGE <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="opera" value="opera"> Opera <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="chrome" value="chrome" checked> Chrome <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="firefox" value="firefox"> Mozilla Firefox <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="dr" value="dr"> Другой <br>
+                </label>
+            </p>
+            <p>
+                Ваша работа связана с использованием компьютера? <br>
+                <label><input type="radio" name="computerJob" value="yes" checked> Да </label>
+                <label><input type="radio" name="computerJob" value="no"> Нет </label>
+            </p>
+            <p>
+                Дополнительная информация: <br>
+                <textarea name="inform" cols="30" rows="10">
+
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+        </form>
+    </fieldset>
+    <!--------------------------Самоизоляция дома----------------------------------------->
+    <hr>
+    <h2> Домашнее задание </h2>
+    <form>
+    <p>
+        <b>Форма №1 Запись на курсы </b>
+    </p>
+    <hr>
+    <p>
+        Имя: <br>
+        <input type="text" name="userName">
+    </p>
+    <p>
+        Язык программирования: <br>
+        <label><input type="radio" name="progLang" value="C++"> C++</label> <br>
+        <label><input type="radio" name="progLang" value="PHP"> PHP</label><br>
+        <label><input type="radio" name="progLang" value="Phyton"> Phyton</label><br>
+        <label><input type="radio" name="progLang" value="Java"> Java</label>
+    </p>
+    <p>
+        Дополнительная информация: <br>
+        <textarea name="information" cols="30" rows="10"> </textarea>
+    </p>
+    <p>
+    Секретное слово:<br>
+    <input type="password" name="password" placeholder="password">
+    </p>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+    </form>
+    <hr>
+    <!------------------------------------------------------------------------>
+    <h3><b>Форма №2</b></h3>
+    <fieldset>
+        <legend>
+            Параметры автомобиля
+        </legend>
+        <form action="">
+            <p>Марка автомобиля:
+                <input type="text" name="carBrand">
+            </p>
+            <p> Объем двигателя, см <sup>3</sup>
+                <input type="text" name="engineCapasity" placeholder="1800">
+            </p>
+            <p> Область:
+                <select name="oblast">
+                    <option value="1"> Витебская </option>
+                    <option value="2"> Брестская </option>
+                    <option value="3"> Гомельская </option>
+                    <option value="4"> Гродненская </option>
+                    <option value="5"> Могилевскя </option>
+                    <option value="6"> Минская </option>
+                    <option value="7"> город Минск </option>
+                </select>
+            </p>
+            <p> Тип КПП: <br>
+                <label><input type="radio" name="transmission" value="manual">Механическая <br></label>
+                <label><input type="radio" name="transmission" value="auto"> Автоматическя</label>
+                
+            </p>
+            <p> Двигатель: <br>
+               <label> <input type="radio" name="fuel" value="gasoline">Бензиновый </label><br>
+               <label> <input type="radio" name="fuel" value="disel"> Дизель </label><br>
+               <label> <input type="radio" name="fuel" value="electro"> Електрический</label><br>
+               <label> <input type="radio" name="fuel" value="hybrid"> Гибрид </label><br>
+               <label> <input type="radio" name="fuel" value="metan"> Метан </label><br>
+            </p>
+            <p> Описание автомобиля: <br>
+                <textarea name="about" cols="30" rows="10"> </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+        </form>
+    </fieldset>
+    <hr>
+    <!------------------------------------------------------------------------>
+    <h3>
+        Форма №3
+    </h3>
+    <fieldset>
+        <legend>Регистрационная форма пользователя</legend>
+        <form name="registr">
+            
+            <p>Имя: 
+                <input type="text">
+            </p>
+            <p>Укажите возраст:
+                <input type="text" name="userAge" list="age">
+                <datalist id="age">
+                    <option value="1-10 лет">
+                    <option value="11-16 лет">
+                    <option value="17-22 лет">
+                    <option value="23-35 лет">  
+                    <option value="35-50 лет">
+                    <option value="Старше 50">
+                </datalist>
+            </p>
+            <p>Ваш пол:
+                <label><input type="radio" name="sex" value="male">Мужской </label>
+                <label><input type="radio" name="sex" value="female">Женский </label>
+                <label><input type="radio" name="sex" value="other">Не определился) </label>
+            </p>
+            <p>Страна проживания
+                <select name="country">
+                    <option value="1"> Беларусь </option>
+                    <option value="2"> Belarus </option>
+                    <option value="3"> Белоруссия </option>
+                    <option value="4"> РФ </option>
+                    <option value="5"> Я не с этой планеты </option>
+                    
+                </select>
+            </p>
+            <p>Владение языками: <br>
+               <label> <input type="checkbox" name="langRU" value="rus"> русский </label>
+               <label> <input type="checkbox" name="langBel" value="bel"> белорусский </label>
+               <label> <input type="checkbox" name="langEng" value="eng"> english </label>
+               <label> <input type="checkbox" name="langMars" value="mars"> марсианский </label>
+               <label> <input type="checkbox" name="langOther" value="other"> другие </label>
+            </p>
+            <p> Фото профиля:
+                <input type="file" value="Файл не выбран">
+            </p>
+            <p>Логин:
+                <input type="text">
+            </p>
+            <p>Ввдедите пароль:
+                <input type="password" name="pass1" placeholder="******">
+            </p>
+            <p>Повторите пароль:
+                <input type="password" name="pass2" placeholder="******">
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>  
+        </form>
+        
+    </fieldset>
+    <hr>
+    <h3> Поле для отзыва</h3>
+    <form name="textarea">
+      <p>  <textarea name="rew" cols="50" rows="10"></textarea>
+      </p>
+      <input type="submit" value="Оставить отзыв">
+    </form>
+</body>
+</html>
