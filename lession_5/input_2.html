@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с Формами</title>
+    <script  src="form2.js"> </script>
+</head>
+<body>
+    
+    <center>
+    <h1>Анкета пользователя</h1>
+    </center>
+    <form>
+        <table border="1" cellspacing="0" width="700">
+                             
+                 <tr>
+                    <th>Фамилия </th>
+                     <th>
+                         <input type="text" name="surname">
+                     </th>
+                                       
+                 </tr>
+             
+                 <tr>
+                     <th>Имя</th>
+                     <th><input type="text" name="name"></th>
+                 </tr>
+                 <tr>
+                    <th>Отчество</th>
+                    <th><input type="text" name="middle_name"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">О себе сообщаюследующие сведения</th>
+                    
+                </tr>
+                <tr>
+                    <th>Пол</th>
+                    <th><label><input type="radio" name="sex" value="1" >Мужской </label><br>
+                        <label></label><input type="radio" name="sex" value="2" > Женский </label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Дата рождения</th>
+                    <th><input type="date" name="date_of_birth"></th>
+                </tr>
+                <tr>
+                    <th>Количество полных лет</th>
+                    <th><input type="number" name="age" min="18" max="63"></th>
+                </tr>
+                <tr>
+                    <th>Адрес места жительства (пребывания)</th>
+                    <th><input type="text" name="address"></th>
+                </tr>
+                <tr>
+                    <th>Номер контактного телефона</th>
+                    <th>+375<input type="tel" name="phone_number"></th>
+                </tr>
+                <tr>
+                    <th>Контактный e-mail</th>
+                    <th><input type="e-mail" name="email"></th>
+                </tr>
+                <tr>
+                    <th>Образование</th>
+                    <th><label><input type="radio" name="education" value="1"> - основное общее среднее профессиональное </label><br>
+                    <label><input type="radio" name="education" value="2">- среднее (полное) общее высшее профессиональное </label><br>
+                    <label><input type="radio" name="education" value="3">- начальное профессиональное </label><br>
+                    <label><input type="radio" name="education" value="4">- иное </label>
+                </th>
+                <tr>
+                    <th>Профессия (специальность)</th>
+                    <th><input type="text" name="profession"></th>
+                </tr>   
+                <tr>
+                    <th>Стаж работы по специаотности</th>
+                    <th>
+                        
+                <select name="experience">
+                    <option value="1">Менее года </option>
+                    <option value="2">1-3 года </option>
+                    <option value="3">3-5 лет </option>
+                    <option value="4"> 5-15 лет </option>
+                    <option value="5">Более 15 лет </option>
+                    
+                </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Предыдущее место работы</th>
+                    <th><input type="text" name="prior_work"></th>
+                </tr>
+                <tr>
+                    <th>Период работы на предыдущем месте</th>
+                    <th>c <input type="date" name="data1"> по <input type="date" name="data2"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="button"  onclick="checkForm()" value="Отправить">
+                        <input type="reset" value="Очистить">
+                    </th>
+                    
+                </tr>
+    </form>
+</body>
+</html>
