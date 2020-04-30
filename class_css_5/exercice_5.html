@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+    <style>
+        table {
+            border: 1px solid #000000;
+            width: 700px;
+            margin:auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        th, td {
+            border: 1px solid #777777;
+            padding: 7px;
+            background-color: #f0f8ff;
+        }
+        input[type="text"], textarea {
+            width: 450px;
+        }
+        caption {
+            font-weight: bold;
+        }
+        tr:last-child {
+            color: red;
+            font-weight: normal;
+            text-align: center;
+        }
+        tr:nth-last-child(n+9) input[type="text"], input[type="tel"] {
+            border: 1px solid #ff0000;
+            box-shadow: 0 0 3px #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <caption>Данные о клиенте</caption>
+            <tr>
+                <th colspan="2">Основные данные</th>             
+            </tr>
+            <tr>
+                <td>Фамилия</td>
+                <td>
+                    <input type="text" name="first_name">
+                </td>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Отчество</td>
+                <td>
+                    <input type="text" name="last_name">
+                </td>
+            </tr>
+            <tr>
+                <td>Дата рождения</td>
+                <td>
+                    <input type="date" name="bth_date">
+                </td>
+            </tr>
+            <tr>
+                <td>Комментарий</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Контакты</th>
+            </tr>
+            <tr>
+                <td>Адрес</td>
+                <td>
+                    <input type="text" name="addr">
+                </td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>e-mail</td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Получать рассылку</td>
+                <td>
+                    <input type="checkbox" name="spam">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Обязательные для заполнения поля выделены красным</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
