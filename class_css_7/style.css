@@ -1,0 +1,179 @@
+
+
+/* Первое задание*/
+
+.block-1__p-1, .block-1__p-2 {
+    width: 500px;
+}
+
+.block-1__p-1 {
+    background-color: rgb(255, 166, 0);
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    text-indent: 1%;
+}
+
+.block-1__p-2 {
+    background-color: violet;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    line-height: 1.6em;
+    text-indent: 3%;
+}
+
+/*Второе задание*/
+
+.block-2__p-1, .block-2__p-2 {
+    width: 500px;
+    padding: 1em;
+}
+
+.block-2__p-1 {
+    background-color:orange;
+}
+
+.block-2__p-2 {
+    background-color:violet;
+    text-align: right;
+}
+.block-2__first, .block-2__second, .block-2__third  {
+    text-decoration: underline;
+    }
+
+.block-2__first {
+    text-decoration-style: dotted;
+}
+
+.block-2__second {
+    text-decoration-style: dashed;
+}
+
+.block-2__third {
+    text-decoration-style: wavy;
+}
+.block-2__p-2 span:nth-child(1) {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.block-2__p-2 span:nth-child(3) {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.block-2__p-2 span:nth-child(5) {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+/*Задание 3*/
+.block-3__p1, .block-3__p2 {
+    width: 500px;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid grey;
+}
+
+.block-3__p2 {
+    text-shadow: 1px 1px 2px grey;
+    letter-spacing: 1.3px;
+    white-space: pre;
+}
+
+/*Задание 4*/
+.block-4__p1, .block-4__p2, .block-4__p3 {
+    width: 500px;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.block-4__p1 {
+    font-style: normal;
+    
+}
+
+.block-4__p2 {
+    font-style: italic;
+}
+
+.block-4__p3 {
+    font-weight: bold;
+}
+
+/*Задание 5*/
+.block-5__p1, .block-5__p2, .block-5__p3 {
+    width: 500px;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid grey;
+    font-family: Gabriola, serif;
+    font-size: 1.2em;
+}
+
+.block-5__p1 {
+    font-style: normal;
+    
+}
+
+.block-5__p2 {
+    font-style: italic;
+}
+
+.block-5__p3 {
+    font-variant: small-caps;
+}
+
+/*Задание 6*/
+.block-6 {
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+
+}
+.block-6__p1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: green;
+}
+
+.block-6__p2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: orange;
+}
+ .block-6__i {
+     font-style: italic;
+ }
+
+ .block-6__b {
+     font-weight: bold;
+ }
+ 
+ .block-6__u {
+     text-decoration: underline;
+ }
+
+ .block-7 {
+     border: 1px solid black;
+}
+
+.block-7 {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.sup {
+    vertical-align: super;
+    font-size: 12px;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: 12px;
+}
