@@ -1,0 +1,110 @@
+.z1 > ol {
+    list-style-type: upper-roman;
+}
+
+.z2 ol ol {
+    list-style-type: lower-latin;
+}
+
+.z3 ol {
+    list-style-type: circle;
+    color: #FF0000;
+}
+
+.z3 ol ol{
+    list-style-type: square;
+    color: #0000FF;
+}
+
+.z4 ol {
+    list-style-type: disc;
+    
+}
+
+.z4 ol ol {
+    list-style-image: url(./marker.png);
+}
+
+.z5__table1 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.z5__table1 td {
+    border: 1px solid black;
+}
+
+.z5__table2 {
+    empty-cells: hide;
+    border: 1px solid black;
+    caption-side: bottom;
+    margin-bottom: 20px;
+}
+
+.z5__table2 td {
+    border: 1px solid black;
+}
+
+.z5__table3 {
+    border-collapse: collapse;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.z5__table3  td:first-child {
+    background-color: rgb(141, 155, 182);
+    color: #FFF;
+}
+
+.z5__table3 tr:first-child td {
+    background-color: rgb(51, 76, 122);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.z5__table3 td {
+    border: 1px solid black;
+    position: relative;
+}
+
+.z5__table3 td:hover::after {
+    background-color: rgba(140, 140, 255, 0.4);
+    content: "";
+    position: absolute;
+    height: 2000vh;
+    left: 0;
+    top: -100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.z5__table3 tr:hover  {
+    background-color:rgba(140, 140, 255, 0.4);
+}
+
+.z6__table {
+    margin: 0 auto;
+    padding: 15px;
+    border-spacing: 5px;
+    empty-cells: hide;
+}
+
+.z6__table td {
+    border-radius: 5px;
+    width: 120px;
+    padding: 15px;
+    background-color: #b1db7a;
+    text-align: center;
+    font-size: 24px;
+}
+
+.z6__table tr:first-child td{
+    background: linear-gradient(to top, #8af004, #6ab623);
+    color: #FFF;
+}
+
+.z6__table td:first-child {
+    background: linear-gradient(45deg, #8af004, #6ab623);
+    color: #FFF;
+}
