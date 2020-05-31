@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .menu {
+      width: 100%;
+      background: rgb(138, 135, 135);
+      padding: 5px;
+    }
+
+    .menu__item {
+      position: relative;
+      line-height: 4em;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #FFF;
+      padding: 40px;
+      transition: all 1s;
+      z-index: 1;
+    }
+
+    .menu__item:hover {
+      color: #00ffaa;
+    }
+
+    .menu__item::before {
+      position: absolute;
+      content: "";
+      width: 0%;
+      height: 100%;
+      left:0;
+      top:0;
+      background: #7ddddd;
+      opacity: 0.8;
+      transition: all 1s;
+      z-index: -1;
+    }
+
+    .menu__item:hover::before {
+      width: 100%;
+    }
+
+    .menu__item::after {
+      position: absolute;
+      content: "";
+      width: 0%;
+      height: 100%;
+      right:0;
+      top:0;
+      background: #7ddddd;
+      opacity: 0.5;
+      transition: all 1s;
+      z-index: -1;
+    }
+    .menu__item:hover::after {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <span class="menu__item">Новости</span>
+    <span class="menu__item">Статьи</span>
+    <span class="menu__item">Меню</span>
+    <span class="menu__item">Контакты</span>
+    
+  </div>
+</body>
+</html>
