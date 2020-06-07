@@ -1,0 +1,5 @@
+.block--green {
+  flex: 1 0 auto;
+  background-color: rgb(6, 190, 0);
+  color: #FFFFFF;
+}
