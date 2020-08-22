@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>circle logo animation</title>
+  <style>
+    .wrapper {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #222;
+    }
+
+    .content {
+      width: 90%;
+      padding: 20px;
+    }
+
+    .content__circle {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      left: 0;
+      top: 0;
+      color: #222;
+      font-weight: 700;
+      text-align: center;
+      line-height: 100px;
+
+      animation-name: white-circle;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+    }
+      
+      @keyframes white-circle {
+      0% {
+        left: 0;
+      }
+      
+      40% {
+        left: 90%;
+      }
+
+      50% {
+        left: 80%;
+      }
+
+      60% {
+        left: 89%;
+      } 
+           
+      70% {
+        left: 81%;
+      }  
+        
+      80% {
+        left: 87%;
+      }
+
+      90% {
+        left: 83%;
+      }
+
+      100% {
+        left: 85%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="content__circle">LOGO</div>
+    </div>
+  </div>
+</body>
+</html>
