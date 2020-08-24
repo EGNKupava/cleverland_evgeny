@@ -1,26 +1,27 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  const buttonClassName = document.querySelector('#className');
-  const buttonClassList = document.querySelector('#classList');
   const buttonClear = document.querySelector('#clear');
   const menuButton = document.querySelector('.menu-button');
   const plateButton = document.querySelector('.plate');
   const contentEl = document.querySelector('.content');
-  
-  buttonClassName.addEventListener('click', () => {
+  const buttonsEl = document.querySelector('.buttons');
+
+  buttonsEl.addEventListener('click', (event) => {
     const div = document.querySelector('.some_classes');
-    div.append(div.className);
-  });
-  buttonClassList.addEventListener('click', () => {
-    const div = document.querySelector('.some_classes');
-    div.append(div.classList);
-  });
-  buttonClear.addEventListener('click', () => {
-    const div = document.querySelector('.some_classes');
-    div.innerHTML = '';
-  });
+    if (event.target.id === 'className') {
+      div.append(div.className);
+    }
+    if (event.target.id === 'classList') {
+      div.append(div.classList);
+    }
+    if (event.target.id === 'clear') {
+      div.innerHTML = '';
+    }
+  })
+
   buttonClear.addEventListener('mouseenter', () => {
     buttonClear.classList.add('red-button');
   });
+
   buttonClear.addEventListener('mouseleave', () => {
     buttonClear.classList.remove('red-button');
   });
