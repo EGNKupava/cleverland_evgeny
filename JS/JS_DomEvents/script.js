@@ -7,16 +7,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   buttonsEl.addEventListener('click', (event) => {
     const div = document.querySelector('.some_classes');
-    if (event.target.id === 'className') {
-      div.append(`className: ${div.className}`);
-    }
-    if (event.target.id === 'classList') {
-      div.append(`classList: ${div.classList}`);
-    }
-    if (event.target.id === 'clear') {
-      div.innerHTML = '';
-    }
+    div.append(`${event.target.id}: ${div.className}`);
   })
+
+  buttonClear.addEventListener('click', () => {
+    const div = document.querySelector('.some_classes');
+    div.innerHTML = '';
+  });
 
   buttonClear.addEventListener('mouseenter', () => {
     buttonClear.classList.add('red-button');
