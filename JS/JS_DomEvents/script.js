@@ -8,10 +8,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   buttonsEl.addEventListener('click', (event) => {
     const div = document.querySelector('.some_classes');
     if (event.target.id === 'className') {
-      div.append(div.className);
+      div.append(`className: ${div.className}`);
     }
     if (event.target.id === 'classList') {
-      div.append(div.classList);
+      div.append(`classList: ${div.classList}`);
     }
     if (event.target.id === 'clear') {
       div.innerHTML = '';
@@ -41,3 +41,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   });
 });
+
